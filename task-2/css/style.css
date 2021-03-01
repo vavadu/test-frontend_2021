@@ -1,0 +1,120 @@
+ 
+
+.container {
+    width: 80%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;  
+}
+.catalog {
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    border: 1px solid grey;
+}
+
+/* Дежурный вариант */
+
+/* .item1 {
+    width: 100%;
+    max-width: 200px;
+    height:  200px;
+    display: block;
+    background: url(../img/1.jpg) no-repeat ;
+    background-size:auto 300px;
+    border-radius: 50%;
+
+} */
+
+.catalog__item {
+    flex: 21%;
+    max-width: 200px;
+    max-height:  200px;
+    margin: 10px; 
+    border:5px solid rgb(92, 89, 89);
+    border-radius: 50%;
+    align-self: center;
+
+    
+}
+.catalog__img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 200px;
+    height:  200px;
+    border-radius: 50%;
+
+}
+  
+
+.catalog__item:nth-last-child(4n) {
+    
+    border:5px solid rgb(231, 10, 10);
+}
+.catalog__item:hover {
+    border:5px solid rgb(231, 219, 40);
+    -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+
+    transition: transform .2s linear
+}
+@media (max-width: 1230px)  {
+    .catalog__item {
+        flex: 33%;
+    }
+    .catalog__item:nth-last-child(4n) {
+    
+        border:5px solid rgb(92, 89, 89);
+    }
+    .catalog__item:nth-last-child(3n) {
+    
+        border:5px solid rgb(223, 39, 39);
+    }
+    .catalog__item:hover {
+        border:5px solid rgb(231, 219, 40);
+        -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    
+        transition: transform .2s linear
+    }
+}
+@media (max-width: 900px) {
+    .catalog__item {
+        flex: 48%;
+    }
+    .catalog__item:nth-last-child(3n) {
+    
+        border:5px solid rgb(92, 89, 89);
+    }
+    .catalog__item:nth-last-child(2n) {
+    
+        border:5px solid rgb(223, 39, 39);
+    }
+    .catalog__item:hover {
+        border:5px solid rgb(231, 219, 40);
+        -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    
+        transition: transform .2s linear
+    }
+}
+@media (max-width: 500px) {
+    .catalog__item {
+        flex: 100%;
+    }
+    .catalog__item:nth-last-child(2n) {
+    
+        border:5px solid rgb(92, 89, 89);
+    }
+    .catalog__item:hover {
+        border:5px solid rgb(231, 219, 40);
+        -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    
+        transition: transform .2s linear
+    }
+}

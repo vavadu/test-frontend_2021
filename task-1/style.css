@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.flag {
+    width: 300px;
+    height: 200px;
+    margin: 20px 0;
+}
+.flag__ukraine {
+    background: linear-gradient(to bottom, #0058b5 50%, #f7ce00 50%);
+}
+.flag__japan {   
+    border: 2px solid #e7e5e5;
+    background: radial-gradient(circle, #bc002d 58px, #fff 60px);
+}
+.flag__island {
+    background-color: #d51d33;
+    position: relative;
+}
+.topleft{
+    width:70px;
+    height:70px;
+    background-color: #024f97;
+    border-right: #fff 15px solid;
+    border-bottom: #fff 15px solid;
+}
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:70px;
+    height:70px;
+    background-color: #024f97;
+    border-top: #fff 15px solid;
+    border-right: #fff 15px solid;
+}
+.topright{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:165px;
+    height:70px;
+    background-color: #024f97;
+    border-bottom: #fff 15px solid;
+    border-left: #fff 15px solid;
+}
+.bottomtight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:165px;
+    height:70px;
+    background-color: #024f97;
+    border-top: #fff 15px solid;
+    border-left: #fff 15px solid;
+}
+.flag__czech {
+    border: solid 1px #e7e5e5;
+    background: linear-gradient(to bottom, #f7f7f7 50%, #d01319 50%);
+}
+.flag__czech::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-left: 150px solid #10437a;
+    border-bottom: 100px solid transparent;
+}
